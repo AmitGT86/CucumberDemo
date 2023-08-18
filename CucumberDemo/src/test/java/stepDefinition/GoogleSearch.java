@@ -16,12 +16,12 @@ public class GoogleSearch {
  WebDriver driver = null;
  
  @Given("browser is open")
- public void browser_is_open() {
- // Initiate the Chrome-driver and open the browser.
-  System.setProperty("webdriver.chrome.driver", "/Users/macuser/Selenium/Drivers/chromedriver");
-  driver = new ChromeDriver();
-  driver.manage().window().maximize(); 
- }
+	public void browser_is_open() {
+		// Initiate the Chrome-driver and open the browser.
+		System.setProperty("webdriver.chrome.driver", "/Users/amitbarua/Downloads/chromedriver/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
 
 
  @And("User is on google search page")
